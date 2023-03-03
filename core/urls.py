@@ -22,6 +22,8 @@ urlpatterns = [
     path("auth/", include('djoser.urls')),
     path("auth/", include('djoser.urls.jwt')),
 
+    path('', include("wezacare.urls")),
+
     path('password-reset/', auth_views.PasswordResetView.as_view(template_name='password/password_reset_form.html',
                                                                  subject_template_name='password/password_reset_subject',
                                                                  email_template_name='password/password_reset_email.html'),

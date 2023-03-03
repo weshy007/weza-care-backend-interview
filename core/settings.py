@@ -40,11 +40,16 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
     'djoser',
     'rest_framework',
+    'drf_yasg',
 
     'wezacare',
+    'account',
 ]
+
+AUTH_USER_MODEL = 'account.CustomUser'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -112,7 +117,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/4.1/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'en-GB'
 
 TIME_ZONE = 'Africa/Nairobi'
 
@@ -145,7 +150,12 @@ SIMPLE_JWT = {
 }
 
 REST_FRAMEWORK = {
+
     'DEFAULT_AUTHENTICATION_CLASSES': (
         'rest_framework_simplejwt.authentication.JWTAuthentication',
     ),
+    'DEFAULT_SCHEMA_CLASS': 'rest_framework.schemas.coreapi.AutoSchema'
 }
+
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
