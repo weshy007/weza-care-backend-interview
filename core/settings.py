@@ -40,6 +40,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'djoser',
+    'rest_framework',
+
+    'wezacare',
 ]
 
 MIDDLEWARE = [
@@ -84,7 +88,6 @@ DATABASES = {
     'PASSWORD': config('DB_PASSWORD'),
     }
 }
-
 
 
 # Password validation
