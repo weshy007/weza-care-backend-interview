@@ -2,15 +2,16 @@
 
 ## Get Started
 ### Clone Project:
-```
-$ git clone git clone https://github.com/weshy007/weza-care-backend-interview.git 
-$ cd weza-care-backend-interview
-```
+
+    $ git clone git clone https://github.com/weshy007/weza-care-backend-interview.git 
+    $ cd weza-care-backend-interview
+
 ### Migrate database:
 The database being used is PostgreSQL. Create it and put it in the `.env` file
 
     $ python manage.py makemigrations
     $ python manage.py migrate
+
 If Database doesn't update tables, use `python manage.py migrate --run-syncdb`
 
 ### Technologies Used
@@ -26,3 +27,8 @@ If Database doesn't update tables, use `python manage.py migrate --run-syncdb`
 the question.
 - User can view all the questions that they have ever asked on the platform
 
+### EndPoints
+- `/auth/...` - Authentication
+- `/jwt/...` - Token
+- `/questions/...` - Questions
+- `/answers/...` - Answers 
