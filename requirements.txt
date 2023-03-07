@@ -20,6 +20,7 @@ defusedxml==0.7.1
 distlib==0.3.6
 distro==1.7.0
 distro-info===1.1build1
+dj-database-url==1.2.0
 Django==4.1.7
 django-templated-mail==1.1.1
 djangorestframework==3.14.0
