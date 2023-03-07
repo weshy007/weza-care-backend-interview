@@ -1,4 +1,6 @@
 ## Weza Care Internship Challenge
+### Deployed link
+- https://wezacare.up.railway.app/auth/users/
 
 ## Get Started
 ### Clone Project:
@@ -28,7 +30,7 @@ the question.
 - User can view all the questions that they have ever asked on the platform
 
 ### EndPoints
-- `/auth/...` - Authentication
-- `/jwt/...` - Token
+- `/auth/users/...` - Authentication
+- `/auth/jwt/...` - Token
 - `/questions/...` - Questions
 - `/answers/...` - Answers 
