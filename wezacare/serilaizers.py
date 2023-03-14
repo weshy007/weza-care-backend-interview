@@ -5,7 +5,7 @@ from .models import Question, Answer
 class QuestionSerializer(serializers.ModelSerializer):
     class Meta:
         model = Question
-        fields = ['id', 'title', 'text', 'created_at', 'updated_at']
+        fields = "__all__"
 
 
 class AnswerSerializer(serializers.ModelSerializer):
@@ -17,7 +17,7 @@ class AnswerSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Answer
-        fields = ['id', 'author', 'question', 'text', 'created_at', 'updated_at']
+        fields = "__all__"
 
 
 class AnswerUpdateSerializer(serializers.ModelSerializer):
